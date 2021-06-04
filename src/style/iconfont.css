@@ -1,0 +1,15 @@
+/* Logo 字体 */
+@font-face {
+  font-family: "iconfont logo";
+  src: url('//at.alicdn.com/t/font_2544727_kxl4gl63pbo.woff2?t=1621861575914') format('woff2'),
+  url('//at.alicdn.com/t/font_2544727_kxl4gl63pbo.woff?t=1621861575914') format('woff'),
+  url('//at.alicdn.com/t/font_2544727_kxl4gl63pbo.ttf?t=1621861575914') format('truetype');
+}
+
+.logo {
+  font-family: "iconfont logo";
+  font-size:.16rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
