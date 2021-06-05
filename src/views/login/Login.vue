@@ -87,7 +87,7 @@ const useRegisterEffect = () => {
 export default {
   name: 'Login',
   components: { Toast },
-  setup() {
+  setup () {
     const { showToast, show, toastMessage } = useToastEffect()
     const { username, password, handleLogin } = useLoginEffect(showToast)
     const { handleRegisterTo } = useRegisterEffect()

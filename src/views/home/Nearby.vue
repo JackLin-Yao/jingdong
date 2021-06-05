@@ -45,7 +45,7 @@ export default {
   components: {
     Shopinfo
   },
-  setup() {
+  setup () {
     const { nearbyList, getNearbyList } = useNearbyEffect()
     getNearbyList()
     return { nearbyList }

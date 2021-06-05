@@ -15,7 +15,7 @@ const routes = [
       import(
         /* webpackChunkName: "register_1" */ '../views/login/Register.vue'
       ),
-    beforeEnter(to, from, next) {
+    beforeEnter (to, from, next) {
       console.log(to, from)
       const { isLogin } = localStorage
       isLogin ? next({ name: 'Login' }) : next()
@@ -26,7 +26,7 @@ const routes = [
     name: 'Login',
     component: () =>
       import(/* webpackChunkName: "login_1" */ '../views/login/Login.vue'),
-    beforeEnter(to, from, next) {
+    beforeEnter (to, from, next) {
       console.log(to, from)
       const { isLogin } = localStorage
       isLogin ? next({ name: 'Home' }) : next()
@@ -59,6 +59,6 @@ router.beforeEach((to, from, next) => {
   const isLoginOrRegister = name === 'Login' || name === 'Register'
   isLogin || isLoginOrRegister ? next() : next({ name: 'Login' })
 
-  console.log(to, from)
+  // console.log(to, from)
 })
 export default router
